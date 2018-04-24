@@ -26,44 +26,19 @@
             <link href='mobil.jpg' rel='shortcut icon'>
 
             </div>
-            
-           <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Home</a>
-            
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
+         <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
+                 <li class="navbar-brand" href="index.html">Home</li>
                 <li class=""><a href="about.html">About<span class="sr-only">(current)</span></a></li>
                 <li><a href="contact.html">Hubungi Kami</a></li>
                  <li><a href="paket wisata.html">Paket Wisata</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pilih Mobil <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Avanza</a></li>
-                    <li><a href="#">Xenia</a></li>
-                    <li><a href="#">Innova</a></li>
+                  <li><a href="List Harga Mobil.html">List Harga Mobil</a></li>
+                
                    
                   </ul>
-                </li>
               </ul>
-              <form class="navbar-form navbar-left">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form>
-              
-                
+     
             </div><!-- /.navbar-collapse -->
             </div><!-- container-fluid -->
           </div><!-- /.container-fluid -->
@@ -78,13 +53,138 @@
               <hr>
               <font face="Courier New"><h4><p>Karena kami memberikan pelayanan terbaik yang pernah ada, kami siap memberikan fasilitas terbaik bagi pelanggan, mulai dari mobil yang bersih, terawat serta pengemudi yang berpengalaman dibidangnya. <br></p>
 
-                <p>jadi penyewa bisa mengandalkan perjalannya pada rental kami dengan Nyaman dan selamat sampai tempat tujuan. Di sini kami juga memberikan List Paket Wisata yang terbilang cukup terjangkau dan dari segi harga bisa di bandingkan dengan rental-rental lainnya. 
+                <p>jadi penyewa bisa mengandalkan perjalannya pada rental kami dengan Nyaman dan selamat sampai tempat tujuan. Di sini kami juga memberikan List Paket Wisata yang terbilang cukup terjangkau dan dari segi harga bisa di bandingkan dengan rental-rental lainnya. <br></p>
+
+                <p> Disini Kami Juga Menyediakan Paket Wisata Bromo, Kawah Ijen, Taman Baluran, Malang Batu dan Juga Pulau Gili Ketapang .Dengan Harga yang begitu terjangkau dan bisa di bandingkan dengan Harga Dari travel lainnnya , fasilittas yang didapatkan pun begitu banyak dan dijamin anda pasti Puas dengan pelayanan Kami. 
               </p></h4></font>
               <hr>
               <img src='mobil.png'></img>
             </div>
+            
+              
+            </font>
             <div id="right-sidebar" class="col-sm-4">
-              <h5>Lalala</h5>
+              <font color="Black"><h1><font face="courier New"> Alternative Menu</font></h1>
+              <li><a  href="index.html">Home</a></li>
+                <li class=""><a href="about.html">About<span class="sr-only">(current)</span></a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="paket wisata.html">Paket Wisata</a></li>
+                <li><a href="List Harga Mobil.html">List Harga Mobil</a></li>
+
+          <!-- this script got from www.htmlbestcodes.com-Coded by: Krishna Eydat -->
+
+<br>
+<left>
+<script language="javascript" type="text/javascript">
+var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+//  DECLARE AND INITIALIZE VARIABLES
+var Calendar = new Date();
+
+var year = Calendar.getFullYear();     // Returns year
+var month = Calendar.getMonth();    // Returns month (0-11)
+var today = Calendar.getDate();    // Returns day (1-31)
+var weekday = Calendar.getDay();    // Returns day (1-31)
+
+var DAYS_OF_WEEK = 7;    // "constant" for number of days in a week
+var DAYS_OF_MONTH = 31;    // "constant" for number of days in a month
+var cal;    // Used for printing
+
+Calendar.setDate(1);    // Start the calendar day at '1'
+Calendar.setMonth(month);    // Start the calendar month at now
+
+
+/* VARIABLES FOR FORMATTING
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+      tags to customize your caledanr's look. */
+
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+
+/* BEGIN CODE FOR CALENDAR
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+tags to customize your calendar's look.*/
+
+cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+
+//   DO NOT EDIT BELOW THIS POINT  //
+
+// LOOPS FOR EACH DAY OF WEEK
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+
+// BOLD TODAY'S DAY OF WEEK
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+
+// PRINTS DAY
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+
+cal += TD_end + TR_end;
+cal += TR_start;
+
+// FILL IN BLANK GAPS UNTIL TODAY'S DAY
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+
+// LOOPS FOR EACH DAY IN CALENDAR
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  // RETURNS THE NEXT DAY TO PRINT
+  week_day =Calendar.getDay();
+
+  // START NEW ROW FOR FIRST DAY OF WEEK
+  if(week_day == 0)
+  cal += TR_start;
+
+  if(week_day != DAYS_OF_WEEK)
+  {
+
+  // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
+  var day  = Calendar.getDate();
+
+  // HIGHLIGHT TODAY'S DATE
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+
+  // PRINTS DAY
+  else
+  cal += TD_start + day + TD_end;
+  }
+
+  // END ROW FOR LAST DAY OF WEEK
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+
+  // INCREMENTS UNTIL END OF THE MONTH
+  Calendar.setDate(Calendar.getDate()+1);
+
+}// end for loop
+
+cal += '</TD></TR></TABLE></TABLE>';
+
+//  PRINT CALENDAR
+document.write(cal);
+
+//  End -->
+</script>
+</left>
+
+
 
             </div>
            
