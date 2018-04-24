@@ -14,21 +14,21 @@
 #right-sidebar,
 #left-sidebar{
 
-	height: 300px;
-	color: white;
+	height: 100%;
+	color: black;
 }
 #right-sidebar{
 
-	background: #079992;
+	background: #FFFFFF;
 
 }
 #main-content{
 
-	background: #0a3d62;
+	background: #FFFFFF;
 	
 }
 #left-sidebar{
-	background: #0a3d62;
+	background: #FFFFFF;
 }
 
 .navbar{
