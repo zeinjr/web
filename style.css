@@ -2,7 +2,7 @@
 
 	width: 100%;
 	height: 100px;
-	background: #808080;
+	background: #2EFEF7;
 	text-align: center;
 }
 #header h1{
@@ -15,20 +15,17 @@
 #left-sidebar{
 
 	height: 100%;
-<<<<<<< HEAD
 	
-=======
->>>>>>> c0dee88120834df91c0cfd66d00ba0e1c415a8e6
 	color: black;
 }
 #right-sidebar{
 
-	background: #FFFFFF;
+	background: #FFFF00;
 
 }
 #main-content{
 
-	background: #FFFFFF;
+	background: #01DF01;
 	
 }
 #left-sidebar{
