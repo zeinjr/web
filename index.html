@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
+<script language="javascript" src ="jquery.min.js"></script>
+<Script language="javascript">
+
+$(document).ready(function(){
+
+  $('.tulisan').append("<br/><font color=red>Adalah Sebuah Rental Mobil di Sidoarjo dan Tour Travel Wilayah Jawa Timur</font>");
+   $('.tulisan').append("<br/><font color=green>Di UNA Trans Sidoarjo</font>");
+})
+</script>
           <meta charset="utf-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,11 +29,12 @@
           <link  href="style.css" rel="stylesheet"/>
         </head>
 
+
         <body>
             
             <div id="header">
-            <left><h1>UNA Trans Sidoarjo<img src='mobil.png'></img></h1></left>
-            <link href='mobil.jpg' rel='shortcut icon'>
+            <h1>UNA Trans Sidoarjo<img src="img/logo.jpg" align="left" height="100" width="100"></img></h1>
+            <link href='logo.jpg' rel='shortcut icon'>
 
             </div>
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,6 +45,7 @@
                 <li><a href="contact.html">Hubungi Kami</a></li>
                  <li><a href="paket wisata.html">Paket Wisata</a></li>
                   <li><a href="List Harga Mobil.html">List Harga Mobil</a></li>
+                  <li><a href="Register.html">Register</a></li>
                 
                    
                   </ul>
@@ -49,16 +61,26 @@
 
 
             <div id="main-content" class="col-sm-8">
-              <h2><font face="courier new">Mengapa Kami? </h2>
+              <h2><font face="courier new">UNA Trans </h2>
+                
               <hr>
-              <font face="Courier New"><h4><p>Karena kami memberikan pelayanan terbaik yang pernah ada, kami siap memberikan fasilitas terbaik bagi pelanggan, mulai dari mobil yang bersih, terawat serta pengemudi yang berpengalaman dibidangnya. <br></p>
+              <h3><div class="tulisan"></div></h3>
+              <font face="Courier New"><h4><p> Kami Juga memberikan pelayanan terbaik yang pernah ada, kami siap memberikan fasilitas terbaik bagi pelanggan, mulai dari mobil yang bersih, terawat serta pengemudi yang berpengalaman dibidangnya. <br></p>
 
                 <p>jadi penyewa bisa mengandalkan perjalannya pada rental kami dengan Nyaman dan selamat sampai tempat tujuan. Di sini kami juga memberikan List Paket Wisata yang terbilang cukup terjangkau dan dari segi harga bisa di bandingkan dengan rental-rental lainnya. <br></p>
 
                 <p> Disini Kami Juga Menyediakan Paket Wisata Bromo, Kawah Ijen, Taman Baluran, Malang Batu dan Juga Pulau Gili Ketapang .Dengan Harga yang begitu terjangkau dan bisa di bandingkan dengan Harga Dari travel lainnnya , fasilittas yang didapatkan pun begitu banyak dan dijamin anda pasti Puas dengan pelayanan Kami. 
+
               </p></h4></font>
               <hr>
-              <img src='mobil.png'></img>
+             <table> <tr>
+              <td><img src="img/avanza.jpg" height="120" width="200"></td>
+              <td><img src="img/inova.jpg" height="120" width="200"></td>
+              <td><img src="img/xenia.jpg" height="120" width="200"></td>
+              <td><img src="img/Alpard.jpg" height="120" width="200"></td>
+              </tr></table>
+
+
             </div>
             
               
@@ -70,8 +92,10 @@
                 <li><a href="contact.html">Hubungi Kami</a></li>
                 <li><a href="paket wisata.html">Paket Wisata</a></li>
                 <li><a href="List Harga Mobil.html">List Harga Mobil</a></li>
+                 <li><a href="Register.html">Register</a></li>
+              
 
-          <!-- this script got from www.htmlbestcodes.com-Coded by: Krishna Eydat -->
+          
 
 <br>
 <left>
@@ -183,7 +207,34 @@ document.write(cal);
 //  End -->
 </script>
 </left>
+<div id="piechart"></div>
 
+<script type="text/javascript" src="loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Laguange', 'Users'],
+  ['Avanza', 744058],
+  ['Xenia', 740610],
+  ['Innova', 478153],
+  ['Alpard', 330259]
+  
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Mobil Yang Sering Di gunakan di Rental Kami', 'width':400, 'height':300};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
 
 
             </div>
